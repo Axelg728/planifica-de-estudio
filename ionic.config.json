@@ -1,0 +1,7 @@
+{
+  "name": "MiniPlanner",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
