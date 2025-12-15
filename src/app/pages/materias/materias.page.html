@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Materias</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <ion-item>
+    <ion-input
+      placeholder="Nombre de la materia"
+      [(ngModel)]="nombre">
+    </ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-input
+      placeholder="Profesor"
+      [(ngModel)]="profesor">
+    </ion-input>
+  </ion-item>
+
+  <ion-button expand="full" (click)="agregarMateria()">
+    Agregar Materia
+  </ion-button>
+
+  <ion-list>
+    <ion-item *ngFor="let materia of materias; let i = index">
+      <ion-label>
+        <h2>{{ materia.nombre }}</h2>
+        <p>{{ materia.profesor }}</p>
+      </ion-label>
+      <ion-button color="danger" (click)="eliminarMateria(i)">
+        Eliminar
+      </ion-button>
+    </ion-item>
+  </ion-list>
+
+</ion-content>

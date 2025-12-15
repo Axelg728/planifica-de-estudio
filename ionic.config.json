@@ -1,0 +1,7 @@
+{
+  "name": "planifica-estudio",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
