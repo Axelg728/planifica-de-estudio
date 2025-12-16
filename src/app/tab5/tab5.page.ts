@@ -33,16 +33,14 @@ interface Materia {
 export class Tab5Page implements OnInit {
 
   // PERFIL
-  nombre = 'Juan Alberto';
+  nombre = '';
   foto: string | null = null;
 
-  // AJUSTES
-  notificaciones = true;
 
   // MATERIAS
   materias: Materia[] = [];
   nuevaMateria = '';
-  colorMateria = '#3b82f6';
+  colorMateria = '#3bf657ff';
 
   ngOnInit() {
     const data = localStorage.getItem('perfil');
@@ -50,7 +48,6 @@ export class Tab5Page implements OnInit {
       const perfil = JSON.parse(data);
       this.nombre = perfil.nombre;
       this.foto = perfil.foto;
-      this.notificaciones = perfil.notificaciones;
       this.materias = perfil.materias || [];
     }
   }
@@ -59,12 +56,11 @@ export class Tab5Page implements OnInit {
     localStorage.setItem('perfil', JSON.stringify({
       nombre: this.nombre,
       foto: this.foto,
-      notificaciones: this.notificaciones,
       materias: this.materias
     }));
   }
 
-  // 📸 SUBIR FOTO
+  //  SUBIR FOTO
   subirFoto(event: any) {
     const file = event.target.files[0];
     if (!file) return;
@@ -77,16 +73,7 @@ export class Tab5Page implements OnInit {
     reader.readAsDataURL(file);
   }
 
-  // 🔔 NOTIFICACIONES (SIMULADAS)
-  toggleNotificaciones() {
-    this.guardarPerfil();
-    alert(this.notificaciones
-      ? 'Notificaciones activadas'
-      : 'Notificaciones desactivadas'
-    );
-  }
-
-  // 📚 MATERIAS
+  //  MATERIAS
   agregarMateria() {
     if (!this.nuevaMateria.trim()) return;
 
