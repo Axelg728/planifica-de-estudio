@@ -1,0 +1,69 @@
+
+.calendario-content {
+  --background: linear-gradient(180deg, #ecfeff, #cffafe);
+  padding: 16px;
+}
+
+/* TARJETA CALENDARIO */
+.calendar-card {
+  border-radius: 22px;
+  background: linear-gradient(135deg, #67e8f9, #22d3ee);
+  color: #083344;
+
+  ion-card-title {
+    font-size: 18px;
+    font-weight: 800;
+  }
+
+  ion-datetime {
+    --background: #ffffff;
+    border-radius: 16px;
+    padding: 10px;
+  }
+}
+
+/* TARJETA EVENTOS */
+.eventos-card {
+  margin-top: 22px;
+  border-radius: 22px;
+  background: #ffffff;
+
+  ion-card-title {
+    font-size: 18px;
+    font-weight: 800;
+    color: #020617;
+  }
+}
+
+/* EVENTO */
+.evento {
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #e0f2fe, #bae6fd);
+  color: #075985;
+  font-size: 14px;
+}
+
+/* TEXTO SIN EVENTOS */
+.no-eventos {
+  text-align: center;
+  font-size: 13px;
+  color: #64748b;
+}
+
+ion-tab-bar {
+  --background: #0c080d;
+  --border: none;
+}
+
+ion-tab-button {
+  --color: #7a6284;
+  --color-selected: #ffffff;
+}
+
+ion-tab-button.tab-selected {
+  background: linear-gradient(135deg, #7a6284, #52425c);
+  border-radius: 18px;
+  margin: 6px;
+}

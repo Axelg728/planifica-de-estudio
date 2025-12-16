@@ -1,0 +1,44 @@
+ion-content {
+  --background: linear-gradient(180deg, #0f172a, #020617);
+  padding: 20px;
+}
+
+ion-title {
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+}
+
+.form-card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 12px 30px rgba(0,0,0,.4);
+}
+
+ion-item {
+  --background: transparent;
+  --color: #0f172a;
+  margin-bottom: 14px;
+}
+
+ion-label {
+  font-weight: 600;
+  color: #475569;
+}
+
+ion-textarea {
+  min-height: 120px;
+  font-size: 15px;
+}
+
+ion-button {
+  --border-radius: 14px;
+  font-weight: 700;
+  margin-top: 12px;
+}
+
+ion-button.cancel {
+  --background: transparent;
+  color: #64748b;
+}

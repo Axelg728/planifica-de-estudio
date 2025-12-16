@@ -1,0 +1,89 @@
+  .tasks {
+    --background: #0f172a;
+    padding-bottom: 30px;
+  }
+
+  /* HERO MINI */
+  .hero-mini {
+    padding: 22px 20px 18px;
+    background: linear-gradient(135deg, rgb(51, 45, 160), #1e40af);
+    border-bottom-left-radius: 26px;
+    border-bottom-right-radius: 26px;
+    color: #fff;
+  }
+
+  .hero-mini h2 {
+    font-size: 22px;
+    font-weight: 800;
+    margin-bottom: 4px;
+  }
+
+  .hero-mini p {
+    font-size: 13px;
+    opacity: 0.9;
+  }
+
+  /* BOTÓN */
+  .btn-add {
+    margin: 20px;
+    --border-radius: 16px;
+    font-weight: 700;
+  }
+
+  /* LISTA */
+  .task-list {
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  /* ITEM */
+  .task-item {
+    background: #020617;
+    border-radius: 20px;
+    padding: 16px;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 14px;
+    box-shadow: 0 12px 26px rgba(0, 0, 0, 0.35);
+  }
+
+  /* TEXTO */
+  .center h3 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #f8fafc;
+    margin-bottom: 4px;
+  }
+
+  .center span {
+    font-size: 12px;
+    color: #cbd5f5;
+  }
+
+  /* CHECKBOX */
+  ion-checkbox {
+    --size: 22px;
+  }
+
+  /* ELIMINAR */
+  .btn-delete {
+    color: #ef4444;
+    font-size: 20px;
+  }
+
+  /* COMPLETADA */
+  .task-item.done {
+    opacity: 0.6;
+  }
+
+  .task-item.done h3 {
+    text-decoration: line-through;
+    color: #94a3b8;
+  }
+  .toolbar-custom {
+    --background: rgb(13, 19, 35);
+    --color: #ffffff;
+  }

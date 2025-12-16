@@ -1,0 +1,69 @@
+<ion-header translucent>
+  <ion-toolbar class="toolbar-custom">
+    <ion-title>StudyPlanner</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content class="home">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Tu día en orden</h1>
+      <p class="date">{{ fecha }}</p>
+      <p class="subtitle">
+        Controla tareas, notas y tu progreso diario en un solo lugar.
+      </p>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats">
+
+    <div class="stat-card primary">
+      <span class="icon">📋</span>
+      <h2>{{ totalTareas$ | async }}</h2>
+      <p>Tareas totales</p>
+    </div>
+
+    <div class="stat-card warning">
+      <span class="icon">⏳</span>
+      <h2>{{ tareasPendientes$ | async }}</h2>
+      <p>Pendientes</p>
+    </div>
+
+    <div class="stat-card success full">
+      <span class="icon">📝</span>
+      <h2>{{ totalNotas$ | async }}</h2>
+      <p>Notas creadas</p>
+    </div>
+
+  </section>
+
+  <!-- FEATURES -->
+  <section class="features">
+    <h3>¿Qué puedes hacer?</h3>
+
+    <div class="feature">
+      <span>✅</span>
+      <p>Planificar tareas con fechas y estados</p>
+    </div>
+
+    <div class="feature">
+      <span>🗒️</span>
+      <p>Crear notas rápidas por día</p>
+    </div>
+
+    <div class="feature">
+      <span>📅</span>
+      <p>Consultar tu actividad en calendario</p>
+    </div>
+
+    <div class="feature">
+      <span>⚙️</span>
+      <p>Personalizar tu experiencia</p>
+    </div>
+  </section>
+
+</ion-content>

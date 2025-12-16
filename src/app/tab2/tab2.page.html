@@ -1,0 +1,52 @@
+<ion-header translucent>
+  <ion-toolbar class="toolbar-custom">
+    <ion-title>Tareas</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="tasks">
+
+  <!-- HERO MINI -->
+  <section class="hero-mini">
+    <h2>Gestión de tareas</h2>
+    <p>Organiza y completa tus pendientes</p>
+  </section>
+
+  <!-- BOTÓN -->
+  <ion-button expand="block" class="btn-add" (click)="nuevaTarea()">
+    + Nueva tarea
+  </ion-button>
+
+  <!-- LISTA -->
+  <section class="task-list">
+
+    <div
+      class="task-item"
+      *ngFor="let t of (tareas$ | async)"
+      [class.done]="t.completada"
+    >
+      <div class="left">
+        <ion-checkbox
+          [checked]="t.completada"
+          (ionChange)="toggle(t)">
+        </ion-checkbox>
+      </div>
+
+      <div class="center">
+        <h3>{{ t.titulo }}</h3>
+        <span>{{ t.completada ? 'Completada' : 'Pendiente' }}</span>
+      </div>
+
+      <div class="right">
+        <ion-button
+          fill="clear"
+          class="btn-delete"
+          (click)="eliminar(t.id)">
+          <ion-icon name="trash"></ion-icon>
+        </ion-button>
+      </div>
+    </div>
+
+  </section>
+
+</ion-content>
