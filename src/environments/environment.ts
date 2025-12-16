@@ -1,5 +1,5 @@
 export const environment = {
-  production: false,
+  production: true,
   firebase: {
     apiKey: "AIzaSyAiqWaYqpgR6Jt7_kufEcnn6QVHF4Qceic",
     authDomain: "integradora-72334.firebaseapp.com",
