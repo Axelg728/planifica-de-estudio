@@ -1,0 +1,88 @@
+.profile {
+  --background: #0f172a;
+  padding-bottom: 30px;
+}
+
+/* HERO PERFIL */
+.hero-profile {
+  padding: 26px 20px 22px;
+  background: linear-gradient(135deg, rgb(80, 70, 229), #1e40af);
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  text-align: center;
+  color: #ffffff;
+}
+
+ion-avatar {
+  margin: 0 auto 12px;
+  width: 96px;
+  height: 96px;
+  border: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.file-input {
+  display: block;
+  margin: 8px auto;
+  color: #e0e7ff;
+  font-size: 13px;
+}
+
+.name-input {
+  margin-top: 12px;
+  --color: #ffffff;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* MATERIAS */
+.subjects-card {
+  margin: 20px;
+  background: #020617;
+  border-radius: 24px;
+  padding: 20px;
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.35);
+}
+
+.subjects-card h3 {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 800;
+  color: #f8fafc;
+  margin-bottom: 16px;
+}
+
+/* FORM */
+.subject-form {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.subject-form ion-input {
+  flex: 1;
+}
+
+/* ITEM */
+.subject-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0f172a;
+  border-radius: 14px;
+  padding: 10px 14px;
+  margin-bottom: 10px;
+  border-left: 6px solid;
+  color: #e5e7eb;
+  font-weight: 600;
+}
+
+/* ELIMINAR */
+.btn-delete {
+  color: #ef4444;
+  font-size: 16px;
+}
+.toolbar-custom {
+  --background: rgb(13, 19, 35);
+  --color: #ffffff;
+}

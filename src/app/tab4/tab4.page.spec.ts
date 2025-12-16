@@ -1,11 +1,11 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { Tab1Page } from './tab1.page';
+import { Tab4Page } from './tab4.page';
 import { FirestoreService } from '../services/firestore.service';
 import { of } from 'rxjs';
 
-describe('Tab1Page', () => {
-  let component: Tab1Page;
-  let fixture: ComponentFixture<Tab1Page>;
+describe('Tab4Page', () => {
+  let component: Tab4Page;
+  let fixture: ComponentFixture<Tab4Page>;
 
   const firestoreMock = {
     getTareas: () => of([]),
@@ -14,13 +14,13 @@ describe('Tab1Page', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [Tab1Page],
+      imports: [Tab4Page],
       providers: [
         { provide: FirestoreService, useValue: firestoreMock }
       ]
     }).compileComponents();
 
-    fixture = TestBed.createComponent(Tab1Page);
+    fixture = TestBed.createComponent(Tab4Page);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
