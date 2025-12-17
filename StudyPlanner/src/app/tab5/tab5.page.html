@@ -1,0 +1,69 @@
+<ion-header translucent>
+  <ion-toolbar class="toolbar-custom">
+    <ion-title>Perfil</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content class="profile">
+
+  <!-- HERO PERFIL -->
+  <section class="hero-profile">
+    <ion-avatar>
+      <img [src]="foto || 'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png'" />
+    </ion-avatar>
+
+    <input
+      type="file"
+      accept="image/*"
+      class="file-input"
+      (change)="subirFoto($event)"
+    />
+
+    <ion-input
+      class="name-input"
+      [(ngModel)]="nombre"
+      placeholder="Tu nombre"
+      (ionBlur)="guardarPerfil()">
+    </ion-input>
+  </section>
+
+  <!-- MATERIAS -->
+  <section class="subjects-card">
+
+    <h3>Materias</h3>
+
+    <div class="subject-form">
+      <ion-input
+        [(ngModel)]="nuevaMateria"
+        placeholder="Nombre de la materia">
+      </ion-input>
+
+      <input
+        type="color"
+        [(ngModel)]="colorMateria" />
+
+      <ion-button size="small" (click)="agregarMateria()">
+        Agregar
+      </ion-button>
+    </div>
+
+    <div
+      class="subject-item"
+      *ngFor="let m of materias; let i = index"
+      [style.borderLeftColor]="m.color">
+
+      <span>{{ m.nombre }}</span>
+
+      <ion-button
+        fill="clear"
+        class="btn-delete"
+        size="small"
+        (click)="eliminarMateria(i)">
+        ✕
+      </ion-button>
+    </div>
+
+  </section>
+
+</ion-content>

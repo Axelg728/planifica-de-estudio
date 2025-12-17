@@ -1,0 +1,78 @@
+.notes {
+  --background: #0f172a;
+  padding-bottom: 30px;
+}
+
+/* HERO MINI */
+.hero-mini {
+  padding: 22px 20px 18px;
+  background: linear-gradient(135deg, rgb(80, 70, 229), #1e40af);
+  border-bottom-left-radius: 26px;
+  border-bottom-right-radius: 26px;
+  color: #fff;
+}
+
+.hero-mini h2 {
+  font-size: 22px;
+  font-weight: 800;
+  margin-bottom: 4px;
+}
+
+.hero-mini p {
+  font-size: 13px;
+  opacity: 0.9;
+}
+
+/* BOTÓN */
+.btn-add {
+  margin: 20px;
+  --border-radius: 16px;
+  font-weight: 700;
+}
+
+/* LISTA */
+.notes-list {
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* CARD */
+.note-card {
+  background: #020617;
+  border-radius: 20px;
+  padding: 18px;
+  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.35);
+}
+
+/* HEADER */
+.note-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.note-header h3 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #f8fafc;
+}
+
+/* CONTENIDO */
+.note-content {
+  font-size: 14px;
+  color: #cbd5f5;
+  line-height: 1.5;
+}
+
+/* ELIMINAR */
+.btn-delete {
+  color: #ef4444;
+  font-size: 18px;
+}
+.toolbar-custom {
+  --background: rgb(13, 19, 35);
+  --color: #ffffff;
+}

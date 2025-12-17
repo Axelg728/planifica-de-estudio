@@ -1,7 +1,0 @@
-{
-  "name": "planifica-estudior",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "angular-standalone"
-}
